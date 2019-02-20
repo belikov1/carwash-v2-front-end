@@ -7,13 +7,18 @@
                 src="../../assets/img/placeholder.png" alt=""></a>
             <router-link to="/profile"><img @click="closeSideMenu()" src="../../assets/img/profile-user.png" alt="">
             </router-link>
-            <button id="menu_button" @click="openCloseSideMenu()"><img src="../../assets/img/menu-button.png" alt=""></button>
+            <button id="menu_button" @click="openCloseSideMenu()"><img src="../../assets/img/menu-button.png" alt="">
+            </button>
         </div>
+        <img style="display: none" src="../../assets/img/ImgForTopTemplate/FourthForTopImgMobile.jpg" alt="">
+        <img style="display: none" src="../../assets/img/ImgForTopTemplate/SecondForTopImgMobile.jpg" alt="">
+        <img style="display: none" src="../../assets/img/ImgForTopTemplate/ThirdForTopImgMobile.jpg" alt="">
+        <img style="display: none" src="../../assets/img/ImgForTopTemplate/FirstForTopImgMobile.jpg" alt="">
         <transition name="menu">
             <div v-if="show" id="menu_side">
                 <ul>
                     <li>
-                        <router-link class="sideMenu" to="/"><img class="move_arrow"
+                        <router-link class="sideMenu" @click="homeScroll()" to="/"><img class="move_arrow"
                                                                   src="../../assets/img/move_arrow.png">Домашняя
                         </router-link>
                     </li>
@@ -38,9 +43,12 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link class="sideMenu" to="/enter"><img class="move_arrow"
-                                                                       src="../../assets/img/move_arrow.png">Регистрация/Войти
+                        <router-link v-if="enterShow" class="sideMenu" to="/enter"><img class="move_arrow"
+                                                                                        src="../../assets/img/move_arrow.png">Войти
                         </router-link>
+                        <button v-if="outShow" class="sideMenu" @click="deleteToken()"><img class="move_arrow"
+                                                                                            src="../../assets/img/move_arrow.png">Выйти
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -49,24 +57,28 @@
 </template>
 
 <script>
-    import {map} from '../ComponentHome/MapComponent'
 
     export default {
         name: "mobile-menu-component",
         data() {
             return {
-                show: false
+                show: false,
+                enterShow: true,
+                outShow: true,
             }
         },
         methods: {
             openCloseSideMenu: function () {
+                this.checkStorage();
+                var that = this;
                 this.show = !this.show;
                 let elem = document.getElementById('menu_button');
                 let elements = document.getElementsByClassName('blur');
                 if (this.show === true) {
                     elem.style.transform = 'rotate(-90deg)';
                     for (let i = 0; i < elements.length; i++) {
-                        elements[i].style.filter = 'blur(3px)'
+                        elements[i].style.filter = 'blur(3px)';
+                        elements[i].addEventListener('click', this.closeSideMenu)
                     }
                 } else {
                     elem.style.transform = 'rotate(0)';
@@ -75,13 +87,27 @@
                     }
                 }
             },
+            deleteToken() {
+                localStorage.removeItem('auth_token');
+                window.location.href = '/'
+            },
+            checkStorage() {
+                if (localStorage.getItem('auth_token')) {
+                    this.enterShow = false;
+                    this.outShow = true;
+                } else {
+                    this.enterShow = true;
+                    this.outShow = false;
+                }
+            },
             closeSideMenu: function () {
                 if (this.show === true) {
                     this.show = false;
                     document.getElementById('menu_button').style.transform = 'rotate(0)';
                     let elements = document.getElementsByClassName('blur');
                     for (let i = 0; i < elements.length; i++) {
-                        elements[i].style.filter = 'none'
+                        elements[i].style.filter = 'none';
+                        elements[i].removeEventListener('click', this.closeSideMenu )
                     }
                 }
             },
@@ -96,15 +122,12 @@
                 }
 
                 function autoScroll() {
-                    ymaps.ready(map);
                     let ST = document.documentElement.scrollTop;
-                    if (document.getElementsByClassName('price-head-home-one')[0].offsetTop < ST + document.documentElement.clientHeight / 2) {
-                        let elements = document.getElementsByClassName('price-head-home-one');
-                        for (let i = 0; i < elements.length; i++) {
-                            elements[i].classList.add('homeAnimation')
-                        }
-                    }
+                    if (document.getElementById('price-head-home').offsetTop < ST + document.documentElement.clientHeight / 2) {
+                        let element = document.getElementById('price-head-home');
+                        element.classList.add('homeAnimation')
 
+                    }
                     if (document.getElementById('navigation').offsetTop < ST + document.documentElement.clientHeight / 2) {
                         let elements = document.getElementsByClassName('navigation');
                         for (let i = 0; i < elements.length; i++) {
@@ -120,6 +143,9 @@
 
                 setTimeout(autoScroll, 10)
             }
+        },
+        created() {
+            this.checkStorage()
         },
         updated() {
             if (this.show) {
@@ -143,18 +169,18 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        bottom: 0;
+        top: 0;
         width: 100%;
         height: 50px;
         background-color: $black;
         z-index: 10;
-        border-top: solid 1px $grey;
+        border-bottom: solid 1px $grey;
     }
 
     #menu_side {
         position: fixed;
         z-index: 5;
-        top: 0;
+        bottom: 0;
         opacity: .95;
         left: 0;
         height: calc(100% - 51px);
@@ -188,6 +214,7 @@
     }
 
     .sideMenu {
+        font-size: 18px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -199,6 +226,11 @@
 
     #menu_side li:last-child {
         border-bottom: solid $grey 1px;
+
+    }
+
+    #menu_side li:first-child {
+        border: none;
 
     }
 

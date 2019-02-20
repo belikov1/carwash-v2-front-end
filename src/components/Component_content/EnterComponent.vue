@@ -2,63 +2,52 @@
     <div id="enter">
         <section id="enterText">
             <h2>Плюсы зарегестрированных пользователей:</h2>
-            <p><img class="move_arrow" src="/src/assets/img/move_arrow.png"> На Ваш аккаунт сразу же начисляются 100
+            <p><img class="move_arrow" src="../../assets/img/move_arrow.png"> Только зарегестрированные
+            пользователи могут зарабатывать и тратить баллы.</p>
+            <p><img class="move_arrow" src="../../assets/img/move_arrow.png"> На Ваш аккаунт сразу же начисляются 100
                 баллов, которыми Вы можете рассплачиваться за наши услуги. Подробнее о системе баллов можете прочитать
                 перейдя по ссылке, а отслеживать их количество в личном кабинете.</p>
-            <p><img class="move_arrow" src="/src/assets/img/move_arrow.png"> Кроме того, только зарегестрированные
-                пользователи могут зарабатывать и тратить баллы.</p>
-            <p><img class="move_arrow" src="/src/assets/img/move_arrow.png"> Будучи зарегестрированным - вы можете
+
+            <p><img class="move_arrow" src="../../assets/img/move_arrow.png"> Будучи зарегестрированным - вы можете
                 оставить свой отзыв, пожелание или предложение.</p>
         </section>
+
         <section id="enterForm">
             <div class="checked">
-                <button id="signButton" @click="buttonSignUp()">Регистрация</button>
+                <a id="signButton" @click="buttonSignUp()">Регистрация</a>
                 <span>/</span>
-                <button @click="buttonLogIn()" id="logButton">Вход</button>
+                <a @click="buttonLogIn()" id="logButton">Вход</a>
             </div>
-            <form v-show="showSignUp">
-                <span>Например A777AA134</span>
-                <input spellcheck="false" @change="checkBorderUserChange('user')"
-                       pattern="^[а-яА-Я]\d{3}[а-яА-Я]{2}\d{2,3}$" required title="А777АА134"
-                       @input="checkBorderUserInput('user')" id="user" type="text"
-                       placeholder="Логин (номер автомобиля)" v-model="user"/>
-                <span>Пароль должен быть не менее 10 символов.</span>
-                <p>Пароль должен состоять из латинских букв и цифр.</p>
-                <input spellcheck="false" @change="checkPasswordBorderChange('password')" pattern="[a-zA-Z0-9]{9,}"
-                       type="password" required
-                       title="Пароль должен содержать хотя бы 1 букву и 1 цифру и буквы должны быть латинские, а длина пароля не менее 10 символов!"
-                       placeholder="Пароль" @input="checkPasswordBorderInput('password')" id="password"
-                       v-model="password"/>
-                <span>Пароли должны совпадать.</span>
-                <input spellcheck="false" @input="checkPasswordInput()" @change="checkPasswordChange()"
-                       v-bind:pattern="password" required title="Должен совпадать с верхнем полем" type="password"
-                       id="twoPassword" placeholder="Повторите пароль" v-model="twoPassword"/>
-                <button type="submit" class="reviewLink">Зарегистрироваться</button>
-            </form>
-            <form id="secondForm" v-show="showLogIn">
-                <input spellcheck="false" pattern="^[а-яА-Я]\d{3}[а-яА-Я]{2}\d{2,3}$" required title="А777АА134"
-                       type="text" placeholder="Логин (номер автомобиля)" v-model="user"/>
-                <input spellcheck="false" pattern="[a-zA-Z0-9]{9,}" type="password" required placeholder="Пароль"
-                       v-model="password"/>
-                <button type="submit" class="reviewLink">Войти</button>
-            </form>
+
+            <EnterSignInComponent v-show="showSignUp">
+
+            </EnterSignInComponent>
+
+            <EnterLogInComponent v-show="showLogIn">
+            </EnterLogInComponent>
+
         </section>
     </div>
 </template>
 
 <script>
+    import EnterLogInComponent from '../EnterLogInComponent.vue'
+    import EnterSignInComponent from '../EnterSignInComponent.vue'
+
+
     export default {
         name: "enter-component",
+        components : {
+            EnterLogInComponent : EnterLogInComponent,
+            EnterSignInComponent : EnterSignInComponent
+        },
         data() {
             return {
-                user: '',
-                password: '',
-                twoPassword: '',
-                showSignUp: true,
-                showLogIn: false,
+                showSignUp: false,
+                showLogIn: true,
             }
         },
-        methods: {
+        methods : {
             buttonSignUp: function () {
                 this.showSignUp = true;
                 this.showLogIn = false;
@@ -70,49 +59,6 @@
                 this.showLogIn = true;
                 document.getElementById('signButton').style.color = '#fff';
                 document.getElementById('logButton').style.color = '#f35656';
-            },
-
-            checkBorderUserInput: function (user) {
-                document.getElementById(user).style.border = 'solid 2px yellow';
-                if (/^[а-яА-Я]\d{3}[а-яА-Я]{2}\d{2,3}$/.test(this.user)) {
-                    document.getElementById(user).style.border = 'solid 2px #01FA00';
-                }
-            },
-            checkBorderUserChange: function (user) {
-                if (/^[а-яА-Я]\d{3}[а-яА-Я]{2}\d{2,3}$/.test(this.user)) {
-                    document.getElementById(user).style.border = 'solid 2px #01FA00';
-                } else {
-                    document.getElementById(user).style.border = 'solid 2px red';
-                }
-            },
-
-            checkPasswordBorderInput: function (password) {
-                document.getElementById(password).style.border = 'solid 2px yellow';
-                if ((/[a-zA-Z]/).test(this.password) && (/[0-9]/).test(this.password) && this.password.length > 9 && !(/[а-яА-Я]/).test(this.password)) {
-                    document.getElementById(password).style.border = 'solid 2px #01FA00';
-                }
-            },
-            checkPasswordBorderChange: function (password) {
-                if ((/[a-zA-Z]/).test(this.password) && (/[0-9]/).test(this.password) && this.password.length > 9 && !(/[а-яА-Я]/).test(this.password)) {
-                    document.getElementById(password).style.border = 'solid 2px #01FA00';
-                } else {
-                    document.getElementById(password).style.border = 'solid 2px red';
-                }
-            },
-
-            checkPasswordChange: function () {
-                if (this.password === this.twoPassword) {
-                    document.getElementById('twoPassword').style.border = 'solid 2px #01FA00';
-                } else {
-                    document.getElementById('twoPassword').style.border = 'solid 2px red';
-                }
-            },
-            checkPasswordInput: function () {
-                if (this.password === this.twoPassword) {
-                    document.getElementById('twoPassword').style.border = 'solid 2px #01FA00';
-                } else {
-                    document.getElementById('twoPassword').style.border = 'solid 2px yellow';
-                }
             }
         },
         mounted() {
@@ -133,7 +79,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     #enter {
         @media screen and (max-width: 812px) {
             display: flex;
@@ -144,9 +90,10 @@
         }
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: start;
         flex-wrap: wrap;
         width: 80%;
+        min-height: 350px;
         padding: 3% 10%;
         background-color: #1b1a20;
 
@@ -212,7 +159,7 @@
                 width: 100%;
                 padding: 0 0 40px;
                 font-size: 28px;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
                 border-bottom: solid 1px grey;
                 letter-spacing: 1.6px;
 
@@ -221,7 +168,7 @@
                     margin: 0 10px;
                 }
 
-                button {
+                a {
                     cursor: pointer;
                     color: #fff;
                     outline: 0 !important;
@@ -230,7 +177,7 @@
 
                 }
 
-                button:hover {
+                a:hover {
                     color: #f35656;
                 }
             }
@@ -245,7 +192,9 @@
                 border: none;
                 outline: none;
             }
-
+            #firstForm input:nth-child(7){
+                margin: 10px 0 20px;
+            }
             #secondForm input:nth-child(2) {
                 margin: 10px 0 20px;
             }
@@ -258,7 +207,7 @@
                 border: 0;
             }
 
-            #user {
+            .user {
                 text-transform: uppercase;
                 margin: 0 0 10px;
             }

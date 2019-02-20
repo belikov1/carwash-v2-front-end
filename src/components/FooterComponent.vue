@@ -18,21 +18,27 @@
         <div class="name">
             &#169; ООО Автомойка на партизанской
         </div>
-        <div id="footer_for_menu"></div>
     </main>
 </template>
 
 <script>
     export default {
         name: "footer-component",
+        data(){
+            return{
+                show: false,
+            }
+        },
         mounted(){
             document.getElementById('toTop').addEventListener('click', function(e) {
                 e.preventDefault();  // запрет перехода по ссылке
-                (function slowScroll(){ //вместо привычного события самовызывающаяся функции
-                    window.scrollBy(0, -50); // чем больше значение (цифра 40), тем выше скорость перемещения
-                    if (window.pageYOffset  > document.getElementById('splinter').offsetTop) { // если значение прокрутки больше нуля, то функция повториться
-                        requestAnimationFrame(slowScroll); //Можно было осуществить через обычную рекурсию, но данный способ выполняется быстрее
-                    }
+                (function (){ //вместо привычного события самовызывающаяся функции
+                    let heightSub = (document.documentElement.clientWidth < 813) ? 50 : 0;//см PriceComponent
+                    let heightScroll = document.getElementById('splinter').offsetTop - heightSub; // высота елемента + высота окна
+                    window.scrollTo({
+                        top : heightScroll,
+                        behavior : "smooth" // режим плавной прокрутки
+                    });
                 }())
             });
         }
@@ -64,11 +70,9 @@
               }
 
               a{
-                  font-family: "Lobster", cursive;
                   font-size: 28px;
                   color: white;
                   text-decoration: none;
-                  font-weight: 500;
                   @media screen and (max-width: 1024px){
                       font-size: 20px;
                   }
@@ -91,10 +95,8 @@
               margin: 10px auto;
           }
           a{
-              font-family: "Lobster", cursive;
               font-size: 28px;
               color: white;
-              font-weight: 500;
               @media screen and (max-width: 1024px){
                   margin: 5px auto;
                   font-size: 24px;

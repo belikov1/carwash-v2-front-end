@@ -31,7 +31,7 @@
             }
         },
         created() {
-            axios.get('http://zhek1996.pythonanywhere.com/api/reviews/')
+            axios.get('http://88.212.253.142/api/reviews/')
                 .then(response => {
                     this.posts = response.data
                 })
