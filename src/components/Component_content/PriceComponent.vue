@@ -62,10 +62,10 @@
                 класса
             </div>
             <div class="group"><span>Класс D</span><img class="group_photo"
-                                                        src='../../assets/img/GroupsPriceComponent/hunter.png'>Внедо&shyрожники
+                                                        src='../../assets/img/GroupsPriceComponent/hunter.png'>Внедо&shyрож&shyники
             </div>
             <div class="group"><span>Класс E</span><img class="group_photo"
-                                                        src='../../assets/img/GroupsPriceComponent/microbus.png'>Микро&shyавтобусы
+                                                        src='../../assets/img/GroupsPriceComponent/microbus.png'>Микро&shyавто&shyбусы
             </div>
 
         </div>
@@ -84,11 +84,11 @@
             <table class="table_one">
                 <tr>
                     <td class="table-td2">Наименование операции:</td>
-                    <td class="table-td">Класс А</td>
-                    <td class="table-td">Класс B</td>
-                    <td class="table-td">Класс C</td>
-                    <td class="table-td">Класс D</td>
-                    <td class="table-td">Класс E</td>
+                    <td class="table-td">А</td>
+                    <td class="table-td">B</td>
+                    <td class="table-td">C</td>
+                    <td class="table-td">D</td>
+                    <td class="table-td">E</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Экспресс №1.</span> <br> (только кузов)</td>
@@ -111,7 +111,7 @@
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Бесконтактная мойка кузова.</span> <br> (кузов,
                         коврики, пороги, арки колёс, кузов и
-                        стёкла протираются перфорированными салфетками, щели продуваются воздухом)
+                        стёкла протираются перф&shyориро&shyван&shyными салфетками, щели продуваются воздухом)
                     </td>
                     <td class="table-td">250</td>
                     <td class="table-td">250</td>
@@ -208,19 +208,15 @@
             <table class="table_one">
                 <tr>
                     <td class="table-td2">Наименование операции:</td>
-                    <td class="table-td">Класс А</td>
-                    <td class="table-td">Класс B</td>
-                    <td class="table-td">Класс C</td>
-                    <td class="table-td">Класс D</td>
-                    <td class="table-td">Класс E</td>
+                    <td class="table-td">А</td>
+                    <td class="table-td">B</td>
+                    <td class="table-td">C</td>
+                    <td class="table-td">D</td>
+                    <td class="table-td">E</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Поверхнастная абразивная полировка.</span><br>
-                        Поверхностная абразивная полировка,
-                        рекомендуется для новых машин. Поверхнастная полировка кузова позволяет устранить:<br><br>-голограммы,
-                        образовавшиеся в следствии проведения абразивных полировок в автосалоне<br>- свежую тонкую
-                        "паутинку" от мойки машины в автосалоне<br>- свежие водяные пятна, приобретённые на открытых
-                        стоянках автосалонов
+
                     </td>
                     <td class="table-td">2700</td>
                     <td class="table-td">3000</td>
@@ -230,43 +226,22 @@
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Мягкая абразивная полировка.</span><br>
-                        (Позволяет устранить "паутинку" от
-                        бесконтактных моек, следы притиров с твёрдыми предметами, другими машинами, окись ЛКП, пятна
-                        кислотного дождя, следы саранчи; загладить или устранить небольшие и отдельные глубокие
-                        царапины. Восстанавливает цвет, прозрачность и блеск ЛКП, обеспечивает 3D глянец, зеркальное
-                        отражение на поверхности. Чтобы предварительно определить, какие глубокие царапины удаляются, а
-                        какие нет, намочите это место водой и осмотрите его. Если цвет кузова в месте царапины
-                        восстанавливается, то царапина устраняется или заглаживается. Царапины, которые чувствуются
-                        ногтем на ощупь не желательно полностью устранять, достаточно загладить. При такой полировке
-                        снимается 5 – 7 мкн лака, что абсолютно безопасно для вашего автомобиля.<br>Процесс работы 3-х
-                        этапный. На первом и втором этапе применяются одношаговые, средние пасты. Последний этап
-                        финишная полировка.)
+
                     </td>
                     <td class="table-td">5000</td>
                     <td class="table-td">6000</td>
                     <td class="table-td">7000</td>
                     <td class="table-td">8000</td>
-                    <td class="table-td">10000</td>
+                    <td class="table-td">10&shy000</td>
                 </tr>
                 <tr>
-                    <td class="table-td2"><span class="table-td2-head">Восстановительная абразивная полировка.</span>
-                        <br> (Предназначена для ЛКП, если оно
-                        очень сильно затёрто, содержит множество сколов; множество глубоких царапин от веток, ручной и
-                        механической мойки; пятна птичьего помёта; остатки саранчи, глубоко въевшиеся в лак и другие
-                        дефекты. Глубокая полировка гарантирует удаление порядка 80% - 90% глубоких царапин, пятен
-                        кислотного дождя; 50% пятен птичьего помёта. Капли древесной смолы удалятся только те, которые
-                        проникли в ЛКП поверхностно. При такой полировке может удалиться слой лака в 10 - 20 микрон.
-                        Такую полировку не стоит делать часто.
-
-                        <br>Процесс работы – многоэтапный. Применяются грубые, одношаговые, средние пасты. Локально
-                        используется наждачная бумага 1500 -2500 для удаления капель древесной смолы и пятен птичьего
-                        помёта. Последний этап – финишная полировка.)
+                    <td class="table-td2"><span class="table-td2-head">Вос&shyстано&shyви&shyтельная абразивная полировка.</span>
                     </td>
                     <td class="table-td">7500</td>
                     <td class="table-td">9000</td>
-                    <td class="table-td">11000</td>
-                    <td class="table-td">12000</td>
-                    <td class="table-td">15000</td>
+                    <td class="table-td">11&shy000</td>
+                    <td class="table-td">12&shy000</td>
+                    <td class="table-td">15&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Удаление налёта краски без полировки.</span> <br>(чистка
@@ -293,17 +268,17 @@
                     <td class="table-td">6000</td>
                     <td class="table-td">7350</td>
                     <td class="table-td">9600</td>
-                    <td class="table-td">11000</td>
-                    <td class="table-td">13100</td>
+                    <td class="table-td">11&shy000</td>
+                    <td class="table-td">13&shy100</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Удаление налёта краски c восстановительной полировкой.</span>
                     </td>
                     <td class="table-td">8150</td>
-                    <td class="table-td">10000</td>
-                    <td class="table-td">13000</td>
-                    <td class="table-td">14500</td>
-                    <td class="table-td">18500</td>
+                    <td class="table-td">10&shy000</td>
+                    <td class="table-td">13&shy000</td>
+                    <td class="table-td">14&shy500</td>
+                    <td class="table-td">18&shy500</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Удаление краски дорожной разметки плюс мягкая полировка.</span><br>
@@ -321,10 +296,10 @@
                         полировка.</span>
                     </td>
                     <td class="table-td">8150</td>
-                    <td class="table-td">10000</td>
-                    <td class="table-td">13000</td>
-                    <td class="table-td">14500</td>
-                    <td class="table-td">18500</td>
+                    <td class="table-td">10&shy000</td>
+                    <td class="table-td">13&shy000</td>
+                    <td class="table-td">14&shy500</td>
+                    <td class="table-td">18&shy500</td>
                 </tr>
             </table>
             <div class="table-head">
@@ -334,11 +309,11 @@
             <table class="table_one">
                 <tr>
                     <td class="table-td2">Наименование операции:</td>
-                    <td class="table-td">Класс А</td>
-                    <td class="table-td">Класс B</td>
-                    <td class="table-td">Класс C</td>
-                    <td class="table-td">Класс D</td>
-                    <td class="table-td">Класс E</td>
+                    <td class="table-td">А</td>
+                    <td class="table-td">B</td>
+                    <td class="table-td">C</td>
+                    <td class="table-td">D</td>
+                    <td class="table-td">E</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Жидкий воск.</span></td>
@@ -349,10 +324,8 @@
                     <td class="table-td">150</td>
                 </tr>
                 <tr>
-                    <td class="table-td2"><span class="table-td2-head">Твердый воск, глейз.</span><br>- Придаёт
-                        неповторимый зеркальный блеск<br>-
-                        Обеспечивает яркий цвет<br>- Обладает водоотталкивающим эффектом<br>- Защищает кузов от
-                        негативных факторов<br>- Продолжительность эффекта — до 3 месяцев
+                    <td class="table-td2"><span class="table-td2-head">Твердый воск, глейз.</span>
+
                     </td>
                     <td class="table-td">350</td>
                     <td class="table-td">450</td>
@@ -455,11 +428,11 @@
             <table class="table_one">
                 <tr>
                     <td class="table-td2">Наименование операции:</td>
-                    <td class="table-td">Класс А</td>
-                    <td class="table-td">Класс B</td>
-                    <td class="table-td">Класс C</td>
-                    <td class="table-td">Класс D</td>
-                    <td class="table-td">Класс E</td>
+                    <td class="table-td">А</td>
+                    <td class="table-td">B</td>
+                    <td class="table-td">C</td>
+                    <td class="table-td">D</td>
+                    <td class="table-td">E</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Потолок.</span></td>
@@ -520,11 +493,11 @@
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Цена на комплекс.</span></td>
-                    <td class="table-td">3000<br>Скидка (850)</td>
-                    <td class="table-td">3000<br>Скидка (970)</td>
-                    <td class="table-td">3500<br>Скидка (890)</td>
-                    <td class="table-td">4500<br>Скидка (460)</td>
-                    <td class="table-td">5000<br>Скидка (450)</td>
+                    <td class="table-td">3000</td>
+                    <td class="table-td">3000</td>
+                    <td class="table-td">3500</td>
+                    <td class="table-td">4500</td>
+                    <td class="table-td">5000</td>
                 </tr>
 
             </table>
@@ -535,11 +508,11 @@
             <table class="table_one">
                 <tr>
                     <td class="table-td2">Наименование операции:</td>
-                    <td class="table-td">Класс А</td>
-                    <td class="table-td">Класс B</td>
-                    <td class="table-td">Класс C</td>
-                    <td class="table-td">Класс D</td>
-                    <td class="table-td">Класс E</td>
+                    <td class="table-td">А</td>
+                    <td class="table-td">B</td>
+                    <td class="table-td">C</td>
+                    <td class="table-td">D</td>
+                    <td class="table-td">E</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Ceramic 9Н 61 без полировки.</span></td>
@@ -556,24 +529,24 @@
                     <td class="table-td">6750</td>
                     <td class="table-td">7850</td>
                     <td class="table-td">8850</td>
-                    <td class="table-td">10650</td>
+                    <td class="table-td">10&shy650</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Мягкая полировка + Ceramic 9Н 61.</span></td>
                     <td class="table-td">8000</td>
                     <td class="table-td">9750</td>
-                    <td class="table-td">11350</td>
-                    <td class="table-td">12850</td>
-                    <td class="table-td">15650</td>
+                    <td class="table-td">11&shy350</td>
+                    <td class="table-td">12&shy850</td>
+                    <td class="table-td">15&shy650</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span
                         class="table-td2-head">Восстановительная полировка + Ceramic 9Н 61.</span></td>
-                    <td class="table-td">10500</td>
-                    <td class="table-td">12750</td>
-                    <td class="table-td">15350</td>
-                    <td class="table-td">16850</td>
-                    <td class="table-td">20650</td>
+                    <td class="table-td">10&shy500</td>
+                    <td class="table-td">12&shy750</td>
+                    <td class="table-td">15&shy350</td>
+                    <td class="table-td">16&shy850</td>
+                    <td class="table-td">20&shy650</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Дополнительный слой Ceramic 9H 61.</span><br>(Каждый
@@ -601,24 +574,24 @@
                     <td class="table-td">7200</td>
                     <td class="table-td">8300</td>
                     <td class="table-td">9500</td>
-                    <td class="table-td">12000</td>
+                    <td class="table-td">12&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Мягкая полировка + Ceramic 9Н 95.</span></td>
                     <td class="table-td">8500</td>
-                    <td class="table-td">10200</td>
-                    <td class="table-td">11800</td>
-                    <td class="table-td">13500</td>
-                    <td class="table-td">17000</td>
+                    <td class="table-td">10&shy200</td>
+                    <td class="table-td">11&shy800</td>
+                    <td class="table-td">13&shy500</td>
+                    <td class="table-td">17&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span
                         class="table-td2-head">Восстановительная полировка + Ceramic 9Н 95.</span></td>
-                    <td class="table-td">11000</td>
-                    <td class="table-td">13200</td>
-                    <td class="table-td">15800</td>
-                    <td class="table-td">17500</td>
-                    <td class="table-td">22000</td>
+                    <td class="table-td">11&shy000</td>
+                    <td class="table-td">13&shy200</td>
+                    <td class="table-td">15&shy800</td>
+                    <td class="table-td">17&shy500</td>
+                    <td class="table-td">22&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Дополнительный слой Ceramic Coating 9Н 95.</span>
@@ -627,33 +600,33 @@
                     <td class="table-td">7200</td>
                     <td class="table-td">8300</td>
                     <td class="table-td">9500</td>
-                    <td class="table-td">12000</td>
+                    <td class="table-td">12&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Поверхностная полировка + Ceramic 9Н 95.</span>
                     </td>
                     <td class="table-td">8500</td>
-                    <td class="table-td">10200</td>
-                    <td class="table-td">11800</td>
-                    <td class="table-td">13500</td>
-                    <td class="table-td">17000</td>
+                    <td class="table-td">10&shy200</td>
+                    <td class="table-td">11&shy800</td>
+                    <td class="table-td">13&shy500</td>
+                    <td class="table-td">17&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Мягкая полировка + Ceramic 9Н 95.</span></td>
                     <td class="table-td">8500</td>
-                    <td class="table-td">10200</td>
-                    <td class="table-td">11800</td>
-                    <td class="table-td">13500</td>
-                    <td class="table-td">17000</td>
+                    <td class="table-td">10&shy200</td>
+                    <td class="table-td">11&shy800</td>
+                    <td class="table-td">13&shy500</td>
+                    <td class="table-td">17&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span
                         class="table-td2-head">Восстановительная полировка + Ceramic 9Н 95.</span></td>
-                    <td class="table-td">11000</td>
-                    <td class="table-td">13200</td>
-                    <td class="table-td">15800</td>
-                    <td class="table-td">17500</td>
-                    <td class="table-td">22000</td>
+                    <td class="table-td">11&shy000</td>
+                    <td class="table-td">13&shy200</td>
+                    <td class="table-td">15&shy800</td>
+                    <td class="table-td">17&shy500</td>
+                    <td class="table-td">22&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span class="table-td2-head">Дополнительный слой Ceramic Coating 9Н 95.</span><br>(Дополнительный
@@ -681,18 +654,18 @@
                     <td class="table-td2"><span class="table-td2-head">Жидкое стекло для новых машин.</span></td>
                     <td class="table-td">8000</td>
                     <td class="table-td">8000</td>
-                    <td class="table-td">10000</td>
-                    <td class="table-td">12000</td>
-                    <td class="table-td">12000</td>
+                    <td class="table-td">10&shy000</td>
+                    <td class="table-td">12&shy000</td>
+                    <td class="table-td">12&shy000</td>
                 </tr>
                 <tr>
                     <td class="table-td2"><span
                         class="table-td2-head">Восстановительная полировка + жидкое стекло.</span></td>
-                    <td class="table-td">13500</td>
-                    <td class="table-td">13500</td>
-                    <td class="table-td">18000</td>
-                    <td class="table-td">22000</td>
-                    <td class="table-td">22000</td>
+                    <td class="table-td">13&shy500</td>
+                    <td class="table-td">13&shy500</td>
+                    <td class="table-td">18&shy000</td>
+                    <td class="table-td">22&shy000</td>
+                    <td class="table-td">22&shy000</td>
                 </tr>
             </table>
             <div class="table-head">
@@ -953,9 +926,8 @@
         text-align: center;
         vertical-align: middle;
         font-size: 18px;
-        border: solid 3px;
-        min-width: 7%;
-        max-width: 7%;
+        border: solid 2px;
+        width: 7%;
         height: 100%;
     }
 
@@ -976,13 +948,11 @@
         padding: 1% 0;
         text-align: center;
         font-size: 18px;
-        border: solid 3px;
+        border: solid 2px;
     }
 
     .table-td2-head {
-        /*font-weight: 500;*/
-        /*text-decoration: underline;*/
-        font-size: 16px
+        font-size: 20px;
     }
 
     .table-tdw2 {
@@ -1059,10 +1029,10 @@
         opacity: 1;
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 813px) {
 
         .groups {
-            font-size: 16px;
+            font-size: 14px;
             margin: 7.5% 2.5%;
             border: solid 1px white;
             border-radius: 15px;
@@ -1091,10 +1061,9 @@
 
         .table-td {
             padding: 0;
-            font-size: 16px;
+            font-size: 14px;
             border: solid 1px;
             min-width: 7%;
-            max-width: 10%;
 
         }
         .table-head {
@@ -1108,21 +1077,24 @@
         }
         .table-tdw {
 
-            font-size: 18px;
+            font-size: 16px;
             border: solid 1px;
             min-width: 12%;
             max-width: 12%;
             height: 100%;
         }
-        .table-td2 {
-            width: 50%;
+        .table-td2-head {
             font-size: 16px;
+        }
+        .table-td2 {
+            width: 30%;
+            font-size: 14px;
             border: solid 1px;
         }
         .table-tdw2 {
             padding: 1% 0;
             text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             border: solid 1px;
         }
 
@@ -1135,25 +1107,6 @@
 
         .img_price_arrow {
             padding: 10px;
-        }
-    }
-
-    @media screen and (max-width: 321px) {
-        .table-td {
-            padding: 0;
-            font-size: 12px;
-            border: solid 1px;
-            min-width: 7%;
-            max-width: 10%;
-        }
-        .groups {
-            font-size: 14px;
-        }
-        .table-tdw2 {
-            font-size: 16px;
-        }
-        .table-tdw {
-            font-size: 16px;
         }
     }
 </style>
