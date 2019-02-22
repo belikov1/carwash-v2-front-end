@@ -1,8 +1,8 @@
 <template>
     <form id="firstForm" @submit.prevent="signUp()">
-        <p class="aboutSign"><img class="move_arrow2" src="../assets/img/move_arrow.png">Логин - это номер автомобиля.</p>
-        <p class="aboutSign"><img class="move_arrow2" src="../assets/img/move_arrow.png">Пароль должен быть не менее 10 символов.</p>
-        <p class="aboutSign"><img class="move_arrow2" src="../assets/img/move_arrow.png">Пароль должен состоять из латинских букв и цифр.</p>
+        <p class="aboutSign"><img class="move_arrow2" src="../../assets/img/move_arrow.png">Логин - это номер автомобиля.</p>
+        <p class="aboutSign"><img class="move_arrow2" src="../../assets/img/move_arrow.png">Пароль должен быть не менее 10 символов.</p>
+        <p class="aboutSign"><img class="move_arrow2" src="../../assets/img/move_arrow.png">Пароль должен состоять из латинских букв и цифр.</p>
         <input spellcheck="false" @change="checkBorderUserChange('user')"
                pattern="^[а-яА-Я]\d{3}[а-яА-Я]{2}\d{2,3}$" required title="А777АА134"
                @input="checkBorderUserInput('user')" class="user" type="text" v-model="user"
@@ -111,6 +111,7 @@
 </script>
 
 <style>
+    /*стили находятся в шаблоне EnterComponent  cd ../ComponentContentRouter/EnterComponent*/
     .move_arrow2 {
         height: 16px;
         width: 16px;

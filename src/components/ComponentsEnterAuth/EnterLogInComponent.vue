@@ -68,5 +68,5 @@
 </script>
 
 <style>
-
+    /*стили находятся в шаблоне EnterComponent  cd ../ComponentContentRouter/EnterComponent*/
 </style>

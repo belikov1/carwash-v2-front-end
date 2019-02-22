@@ -1,8 +1,8 @@
 <template>
     <main id="footer">
         <section class="numbers">
-            <div class="container"><a href="+7 927-548-04-05">8 927-548-04-05</a><p> Запись на автомйку</p></div>
-            <div class="container"><a href="+7 937-544-44-18">8 937-544-44-18</a><p> Запись на полировку</p></div>
+            <div class="container"><a href="tel:+7 927-548-04-05">8 927-548-04-05</a><p> Запись на автомйку</p></div>
+            <div class="container"><a href="tel:+7 937-544-44-18">8 937-544-44-18</a><p> Запись на полировку</p></div>
         </section>
         <section class="social_network">
             <a href="https://vk.com/public162539824">Вконтакте</a>

@@ -31,8 +31,8 @@
 </template>
 
 <script>
-    import EnterLogInComponent from '../EnterLogInComponent.vue'
-    import EnterSignInComponent from '../EnterSignInComponent.vue'
+    import EnterLogInComponent from '../ComponentsEnterAuth/EnterLogInComponent.vue'
+    import EnterSignInComponent from '../ComponentsEnterAuth/EnterSignInComponent.vue'
 
 
     export default {

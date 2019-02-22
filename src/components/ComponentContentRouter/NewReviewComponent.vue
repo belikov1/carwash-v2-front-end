@@ -1,7 +1,7 @@
 <template>
     <section class="new_review_navigation">
         <div class="editor">
-            <h3>Мы ждем от вас только аргументированные пожелания или отзывы. Отзывы включающие оскобления или
+            <h3>Мы ждем от вас только аргументированные пожелания или отзывы. Отзывы включающие оскорбления или
                 нецензурную лексику, будут сразу же удалены!</h3>
             <form @submit.prevent="savePost()">
                 <textarea spellcheck="false" required placeholder="Текст отзыва" v-model="post.text"></textarea>
