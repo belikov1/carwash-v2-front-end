@@ -2,7 +2,7 @@
 
 </style>
 <template>
-    <div>asdasdasd</div>
+    <div>asdasdassddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd <div>fsdfsdfsdf</div> </div>
 </template>
 <script>
 export default {
